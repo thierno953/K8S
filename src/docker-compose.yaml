@@ -1,15 +1,15 @@
 version: '3'
 services:
-  app-server:
-    image: thiernos/app-server:1.0
-    container_name: app-server
+  app_server:
+    image: thiernos/app_server:1.0
+    container_name: app_server
     ports:
       - 3000:3000
     networks:
       - app-network
-  web-server:
-    image: thiernos/web-server:1.0
-    container_name: web-server
+  web_server:
+    image: thiernos/web_server:1.0
+    container_name: web_server
     ports:
       - 80:80
     networks:
